@@ -8,10 +8,10 @@
     <span class="mb-2 d-block"><small><em class="text-muted"><%= "You haven't saved any movies yet!" if @list.movies.empty? %></em></small></span>
     <div>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new_movie_modal">
-        add a movie
+        Add a Movie
       </button>
-      <%= link_to "delete this list", list_path(@list), class: "btn btn-secondary", data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" } %>
+      <%= link_to "Delete This List", list_path(@list), class: "btn btn-secondary", data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" } %>
       <div>
-      <%= link_to "Go Back", lists_path %>
+      <%= link_to "Back To Third Eye Views", lists_path, class: 'mt-4' %>
     </div>
   </div>
